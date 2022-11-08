@@ -1,9 +1,11 @@
 /**
  * Do not edit directly
- * Generated on Tue, 08 Nov 2022 02:28:39 GMT
+ * Generated on Tue, 08 Nov 2022 03:20:53 GMT
  */
 
 :root {
+  --nv-background-color-light: #ffffff;
+  --nv-background-color-dark: #003148;
   --nv-color-base-white: #ffffff;
   --nv-color-base-gray-100: #e0e1e1;
   --nv-color-base-gray-200: #d4d8dd;
@@ -17,13 +19,38 @@
   --nv-color-base-red-200: #e46528;
   --nv-color-base-red-300: #a42643;
   --nv-color-base-green-100: #6fc7b4;
-  --nv-color-base-green-200: #4da58f;
+  --nv-color-base-green-200: #40a58f;
   --nv-color-font-base: #003148;
-  --nv-color-font-secondary: #4da58f;
+  --nv-color-font-secondary: #40a58f;
   --nv-color-font-tertiary: #89c8ee;
-  --nv-headings-h1: clamp(4.27rem, 1.67vw + 3.6rem, 6.01rem);
-  --nv-headings-h2: clamp(2.73rem, 0.77vw + 2.42rem, 3.54rem);
-  --nv-headings-h3: clamp(2.19rem, 0.51vw + 1.98rem, 2.72rem);
+  --nv-elements-size-h1: clamp(4.27rem, 1.67vw + 3.6rem, 6.01rem);
+  --nv-elements-size-h2: clamp(2.73rem, 0.77vw + 2.42rem, 3.54rem);
+  --nv-elements-size-h3: clamp(2.19rem, 0.51vw + 1.98rem, 2.72rem);
+  --nv-elements-size-accent: clamp(1.4rem, 0.19vw + 1.32rem, 1.6rem);
+  --nv-elements-size-link: clamp(1.4rem, 0.19vw + 1.32rem, 1.6rem);
+  --nv-elements-size-block: clamp(2.19rem, 0.51vw + 1.98rem, 2.72rem);
+  --nv-elements-size-body: clamp(1.4rem, 0.19vw + 1.32rem, 1.6rem);
+  --nv-elements-color-light-h1: #40a58f;
+  --nv-elements-color-light-h2: #425d93;
+  --nv-elements-color-light-h3: #a42643;
+  --nv-elements-color-light-accent: #40a58f;
+  --nv-elements-color-light-link: #e46528;
+  --nv-elements-color-light-block: #425d93;
+  --nv-elements-color-light-body: #003148;
+  --nv-elements-color-dark-h1: #6fc7b4;
+  --nv-elements-color-dark-h2: #f49e10;
+  --nv-elements-color-dark-h3: #89c8ee;
+  --nv-elements-color-dark-accent: #6fc7b4;
+  --nv-elements-color-dark-link: #f49e10;
+  --nv-elements-color-dark-block: #89c8ee;
+  --nv-elements-color-dark-body: #ffffff;
+  --nv-elements-weight-h1: 900;
+  --nv-elements-weight-h2: 600;
+  --nv-elements-weight-h3: 200;
+  --nv-elements-weight-accent: 900;
+  --nv-elements-weight-link: 600;
+  --nv-elements-weight-block: 900;
+  --nv-elements-weight-body: 500;
   --nv-font-size-small: clamp(1.12rem, 0.1vw + 1.08rem, 1.23rem); /* max-size: 12.3px */
   --nv-font-size-base: clamp(1.4rem, 0.19vw + 1.32rem, 1.6rem); /* max-size: 16px */
   --nv-font-size-medium: clamp(1.75rem, 0.32vw + 1.62rem, 2.08rem); /* max-size: 20.8px */

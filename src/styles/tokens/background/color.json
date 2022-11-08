@@ -1,0 +1,6 @@
+{
+    "backgroundColor": {
+        "light": { "value": "{color.base.white.value}"},
+        "dark": { "value": "{color.base.blue.500.value}"}
+    }
+}
