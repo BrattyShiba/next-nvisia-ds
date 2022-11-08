@@ -1,0 +1,39 @@
+/**
+ * Do not edit directly
+ * Generated on Tue, 08 Nov 2022 02:28:39 GMT
+ */
+
+:root {
+  --nv-color-base-white: #ffffff;
+  --nv-color-base-gray-100: #e0e1e1;
+  --nv-color-base-gray-200: #d4d8dd;
+  --nv-color-base-gray-300: #303e3f;
+  --nv-color-base-blue-100: #a9cde3;
+  --nv-color-base-blue-200: #89c8ee;
+  --nv-color-base-blue-300: #425d93;
+  --nv-color-base-blue-400: #2c3361;
+  --nv-color-base-blue-500: #003148;
+  --nv-color-base-red-100: #f49e10;
+  --nv-color-base-red-200: #e46528;
+  --nv-color-base-red-300: #a42643;
+  --nv-color-base-green-100: #6fc7b4;
+  --nv-color-base-green-200: #4da58f;
+  --nv-color-font-base: #003148;
+  --nv-color-font-secondary: #4da58f;
+  --nv-color-font-tertiary: #89c8ee;
+  --nv-headings-h1: clamp(4.27rem, 1.67vw + 3.6rem, 6.01rem);
+  --nv-headings-h2: clamp(2.73rem, 0.77vw + 2.42rem, 3.54rem);
+  --nv-headings-h3: clamp(2.19rem, 0.51vw + 1.98rem, 2.72rem);
+  --nv-font-size-small: clamp(1.12rem, 0.1vw + 1.08rem, 1.23rem); /* max-size: 12.3px */
+  --nv-font-size-base: clamp(1.4rem, 0.19vw + 1.32rem, 1.6rem); /* max-size: 16px */
+  --nv-font-size-medium: clamp(1.75rem, 0.32vw + 1.62rem, 2.08rem); /* max-size: 20.8px */
+  --nv-font-size-large: clamp(2.19rem, 0.51vw + 1.98rem, 2.72rem); /* max-size: 27.2px */
+  --nv-font-size-x-large: clamp(2.73rem, 0.77vw + 2.42rem, 3.54rem); /* max-size: 35.4px */
+  --nv-font-size-xx-large: clamp(3.42rem, 1.15vw + 2.96rem, 4.61rem); /* max-size: 46.1px */
+  --nv-font-size-xxx-large: clamp(4.27rem, 1.67vw + 3.6rem, 6.01rem); /* max-size: 60.1px */
+  --nv-media-query-small-screen: 'only screen and (min-width: 767px)';
+  --nv-media-query-medium-screen: 'only screen and (min-width: 768px)';
+  --nv-media-query-large-screen: 'only screen and (min-width: 1025px)';
+  --nv-media-query-x-large-screen: 'only screen and (min-width: 1200px)';
+  --nv-media-query-xx-large-screen: 'only screen and (min-width: 1400px)';
+}

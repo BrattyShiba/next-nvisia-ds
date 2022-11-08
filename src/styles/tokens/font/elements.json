@@ -1,0 +1,10 @@
+{
+    "headings": {
+        "h1": { "value": "{fontSize.xxxLarge.value}"},
+        "h2": { "value": "{fontSize.xLarge.value}"},
+        "h3": { "value": "{fontSize.large.value}"},
+        "accent": {"value": "{fontSize.base.value"},
+        "block": { "value": "{fontSize.large.value}"},
+        "body": {"value": "{fontSize.base.value"}
+    }
+}

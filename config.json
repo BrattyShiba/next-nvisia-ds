@@ -1,0 +1,22 @@
+{
+  "source": ["src/styles/tokens/**/*.json"],
+  "platforms": {
+    "css": {
+      "transformGroup": "css",
+      "prefix": "nv",
+      "buildPath": "src/styles/css/",
+      "files": [
+        {"destination": "_variables.css",
+      "format": "css/variables"}
+      ]
+    },
+    "js": {
+      "transformGroup": "js",
+      "buildPath": "build/js/",
+      "files": [{
+        "destination": "variables.js",
+        "format": "javascript/es6"
+      }]
+    }
+  }
+}
