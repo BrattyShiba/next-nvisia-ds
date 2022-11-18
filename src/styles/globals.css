@@ -14,6 +14,7 @@ body {
   overflow-x: hidden;
   color: var(--nv-elements-color-light-body);
   background: var(--nv-background-color-light);
+  font-family: var(--nv-font-family-mic-rounded);
 }
 
 h1 {

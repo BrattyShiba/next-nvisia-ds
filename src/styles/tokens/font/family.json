@@ -1,0 +1,10 @@
+{
+  "fontFamily": {
+    "Mic-Rounded": {
+      "value": "'Mic-32-New-Rounded-Web', sans-serif"
+    },
+    "Mic-Normal": {
+      "value": "'Mic-32-New-Web', sans-serif"
+    }
+  }
+}

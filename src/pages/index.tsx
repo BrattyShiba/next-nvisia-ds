@@ -9,6 +9,7 @@ export default function Home() {
         <title>NV Design System</title>
         <meta name="description" content="Nvisia design system" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://use.typekit.net/rbq3ono.css" />
       </Head>
 
       <main className={styles.main}>

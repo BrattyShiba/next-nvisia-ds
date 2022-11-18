@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 08 Nov 2022 03:20:53 GMT
+ * Generated on Fri, 18 Nov 2022 22:12:38 GMT
  */
 
 :root {
@@ -26,8 +26,8 @@
   --nv-elements-size-h1: clamp(4.27rem, 1.67vw + 3.6rem, 6.01rem);
   --nv-elements-size-h2: clamp(2.73rem, 0.77vw + 2.42rem, 3.54rem);
   --nv-elements-size-h3: clamp(2.19rem, 0.51vw + 1.98rem, 2.72rem);
-  --nv-elements-size-accent: clamp(1.4rem, 0.19vw + 1.32rem, 1.6rem);
-  --nv-elements-size-link: clamp(1.4rem, 0.19vw + 1.32rem, 1.6rem);
+  --nv-elements-size-accent: clamp(1.75rem, 0.32vw + 1.62rem, 2.08rem);
+  --nv-elements-size-link: clamp(1.75rem, 0.32vw + 1.62rem, 2.08rem);
   --nv-elements-size-block: clamp(2.19rem, 0.51vw + 1.98rem, 2.72rem);
   --nv-elements-size-body: clamp(1.4rem, 0.19vw + 1.32rem, 1.6rem);
   --nv-elements-color-light-h1: #40a58f;
@@ -51,6 +51,8 @@
   --nv-elements-weight-link: 600;
   --nv-elements-weight-block: 900;
   --nv-elements-weight-body: 500;
+  --nv-font-family-mic-rounded: 'Mic-32-New-Rounded-Web', sans-serif;
+  --nv-font-family-mic-normal: 'Mic-32-New-Web', sans-serif;
   --nv-font-size-small: clamp(1.12rem, 0.1vw + 1.08rem, 1.23rem); /* max-size: 12.3px */
   --nv-font-size-base: clamp(1.4rem, 0.19vw + 1.32rem, 1.6rem); /* max-size: 16px */
   --nv-font-size-medium: clamp(1.75rem, 0.32vw + 1.62rem, 2.08rem); /* max-size: 20.8px */
@@ -58,6 +60,10 @@
   --nv-font-size-x-large: clamp(2.73rem, 0.77vw + 2.42rem, 3.54rem); /* max-size: 35.4px */
   --nv-font-size-xx-large: clamp(3.42rem, 1.15vw + 2.96rem, 4.61rem); /* max-size: 46.1px */
   --nv-font-size-xxx-large: clamp(4.27rem, 1.67vw + 3.6rem, 6.01rem); /* max-size: 60.1px */
+  --nv-font-weight-bold: 900;
+  --nv-font-weight-medium: 600;
+  --nv-font-weight-regular: 500;
+  --nv-font-weight-light: 200;
   --nv-media-query-small-screen: 'only screen and (min-width: 767px)';
   --nv-media-query-medium-screen: 'only screen and (min-width: 768px)';
   --nv-media-query-large-screen: 'only screen and (min-width: 1025px)';
