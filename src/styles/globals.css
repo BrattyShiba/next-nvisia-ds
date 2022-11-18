@@ -59,6 +59,15 @@ p {
   font-weight: var(--nv-elements-weight-body);
 }
 
+.visually-hidden {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
