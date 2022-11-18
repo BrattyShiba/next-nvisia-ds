@@ -1,6 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
+import { Maven_Pro } from '@next/font/google';
+
 import styles from "../styles/Home.module.css";
+
+const mavenPro = Maven_Pro({ subsets: ['latin']});
 
 export default function Home() {
   return (
@@ -20,12 +24,14 @@ export default function Home() {
         <figure>
           <blockquote>This is a block quote</blockquote>
         </figure>
-        <p>
+        <div className={mavenPro.className}>
+          <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
           doloribus et fuga. Voluptates nobis porro assumenda, magnam
           accusantium doloremque recusandae aperiam, perspiciatis aut at amet
           veritatis cum numquam dolor ea?
         </p>
+        </div>
       </main>
     </div>
   );
