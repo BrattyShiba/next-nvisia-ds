@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Maven_Pro } from '@next/font/google';
 
 import styles from "../styles/Home.module.css";
+import { InputField } from "./components/InputField";
 
 const mavenPro = Maven_Pro({ subsets: ['latin']});
 
@@ -32,6 +33,11 @@ export default function Home() {
           veritatis cum numquam dolor ea?
         </p>
         </div>
+        <InputField
+          label="Full Name"
+          name="fullName"
+          required={true}
+        />
       </main>
     </div>
   );
