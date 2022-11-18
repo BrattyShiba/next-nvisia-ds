@@ -1,11 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Maven_Pro } from '@next/font/google';
 
 import styles from "../styles/Home.module.css";
 import { InputField } from "./components/InputField";
-
-const mavenPro = Maven_Pro({ subsets: ['latin']});
 
 export default function Home() {
   return (
@@ -14,7 +11,6 @@ export default function Home() {
         <title>NV Design System</title>
         <meta name="description" content="Nvisia design system" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://use.typekit.net/rbq3ono.css" />
       </Head>
 
       <main className={styles.main}>
@@ -26,19 +22,15 @@ export default function Home() {
         <figure>
           <blockquote>This is a block quote</blockquote>
         </figure>
-        <div className={mavenPro.className}>
+        <div>
           <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-          doloribus et fuga. Voluptates nobis porro assumenda, magnam
-          accusantium doloremque recusandae aperiam, perspiciatis aut at amet
-          veritatis cum numquam dolor ea?
-        </p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+            doloribus et fuga. Voluptates nobis porro assumenda, magnam
+            accusantium doloremque recusandae aperiam, perspiciatis aut at amet
+            veritatis cum numquam dolor ea?
+          </p>
         </div>
-        <InputField
-          label="Full Name"
-          name="fullName"
-          required={true}
-        />
+        <InputField label="Full Name" name="fullName" required={true} />
       </main>
     </div>
   );
