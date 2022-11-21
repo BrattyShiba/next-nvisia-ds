@@ -4,8 +4,8 @@
       "h1": { "value": "{fontSize.xxxLarge.value}" },
       "h2": { "value": "{fontSize.xLarge.value}" },
       "h3": { "value": "{fontSize.large.value}" },
-      "accent": { "value": "{fontSize.base.value}" },
-      "link": { "value": "{fontSize.base.value}" },
+      "accent": { "value": "{fontSize.medium.value}" },
+      "link": { "value": "{fontSize.medium.value}" },
       "block": { "value": "{fontSize.large.value}" },
       "body": { "value": "{fontSize.base.value}" }
     },
@@ -30,13 +30,13 @@
       }
     },
     "weight": {
-      "h1": { "value": "900" },
-      "h2": { "value": "600" },
-      "h3": { "value": "200" },
-      "accent": { "value": "900" },
-      "link": { "value": "600" },
-      "block": { "value": "900" },
-      "body": { "value": "500" }
+      "h1": { "value": "{fontWeight.bold.value}" },
+      "h2": { "value": "{fontWeight.medium.value}" },
+      "h3": { "value": "{fontWeight.light.value}" },
+      "accent": { "value": "{fontWeight.bold.value}" },
+      "link": { "value": "{fontWeight.medium.value}" },
+      "block": { "value": "{fontWeight.bold.value}" },
+      "body": { "value": "{fontWeight.regular.value}" }
     }
   }
 }
