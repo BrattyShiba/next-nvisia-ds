@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 18 Nov 2022 22:12:38 GMT
+ * Generated on Sat, 19 Nov 2022 03:34:49 GMT
  */
 
 :root {
@@ -72,4 +72,6 @@
   --nv-media-query-large-screen: 'only screen and (min-width: 1025px)';
   --nv-media-query-x-large-screen: 'only screen and (min-width: 1200px)';
   --nv-media-query-xx-large-screen: 'only screen and (min-width: 1400px)';
+  --nv-radii-none: 0;
+  --nv-radii-base: 3px 3px 3px 3px;
 }
