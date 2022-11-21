@@ -4,6 +4,7 @@ import Image from "next/image";
 import { InputField } from "./components/InputField";
 import { Dropdown, DropdownItem } from "./components/Dropdown";
 import { useTheme } from "./context/ThemeContext";
+import { useEffect } from "react";
 
 export default function Home() {
   const { isDarkTheme, toggleTheme } = useTheme();
@@ -11,6 +12,14 @@ export default function Home() {
   const toggleDarkTheme = () => {
     toggleTheme();
   };
+  useEffect(() => {
+    if (isDarkTheme && document) {
+      document.querySelector("body")!.dataset.theme = "dark-theme";
+    } else {
+      document.querySelector("body")!.dataset.theme = "light-theme";
+    }
+  }, [isDarkTheme]);
+
   return (
     <div data-theme={isDarkTheme ? "dark-theme" : "light-theme"}>
       <Head>

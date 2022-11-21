@@ -35,8 +35,10 @@
     "@storybook/react": "^6.5.13",
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.3.0",
+    "css-loader": "^6.7.2",
     "eslint-plugin-storybook": "^0.6.7",
     "sass": "^1.56.0",
+    "sass-loader": "^13.2.0",
     "storybook-dark-mode": "^1.1.2",
     "style-dictionary": "^3.7.1"
   }

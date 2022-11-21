@@ -6,7 +6,7 @@
 import "../src/styles/css/_normalize.css";
 import "../src/styles/css/_variables.css";
 import "../src/styles/globals.css";
-import * as styles from "../build/js/variables";
+import "!style-loader!css-loader!sass-loader!./styles.scss";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

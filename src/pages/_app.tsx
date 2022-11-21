@@ -1,6 +1,7 @@
 import "../styles/css/_normalize.css";
 import "../styles/css/_variables.css";
 import "../styles/globals.css";
+import "../styles/scss/main.scss";
 
 import type { AppProps } from "next/app";
 import ThemeProvider from "./context/ThemeContext";
