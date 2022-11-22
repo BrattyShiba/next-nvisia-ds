@@ -72,4 +72,6 @@
   --nv-media-query-large-screen: 'only screen and (min-width: 1025px)';
   --nv-media-query-x-large-screen: 'only screen and (min-width: 1200px)';
   --nv-media-query-xx-large-screen: 'only screen and (min-width: 1400px)';
+  --nv-radii-none: 0;
+  --nv-radii-base: 3px 3px 3px 3px;
 }
