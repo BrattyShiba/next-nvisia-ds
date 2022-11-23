@@ -1,35 +1,22 @@
 import React, { ChangeEvent, useState } from "react";
 
-import styles from './InputField.module.css';
+// import styles from './InputField.module.css';
+// import styles from "../../styles/scss/inputField.scss";
 
 interface InputFieldProps {
-  /**
-   * Whether or not there's an error with the input
-   */
+  // Whether or not there's an error with the input
   hasError?: boolean;
-  /**
-   * whether or not the form field should be disabled - questionable accessibility
-   */
+  // Whether or not the form field should be disabled - questionable accessibility
   disabled?: boolean;
-  /**
-   * What the form field is for - its label, so the end user knows what to enter into the field
-   */
+  // What the form field is for - its label, so the end user knows what to enter into the field
   label: string;
-  /**
-   * Name of the form field. Submitted with the form as part of a name/value pair
-   */
+  // Name of the form field. Submitted with the form as part of a name/value pair
   name: string;
-  /**
-   * Optional handler for blur event from field
-   */
+  // Optional handler for blur event from field
    onBlur?: (e: ChangeEvent<HTMLInputElement>) => void;
-  /**
-   * Optional handler for change events in field
-   */
+  // Optional handler for change events in field
    onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
-  /**
-   * Is it required that this input field be filled in, in order to proceed?
-   */
+  // Is it required that this input field be filled in, in order to proceed?
   required?: boolean;
 }
 
@@ -61,22 +48,25 @@ export const InputField = ({
     setError(false);
   }
 
-  // TODO: add "moving form label" for somewhat better accessibility. see: https://codepen.io/Bergability/pen/ByqyOP - Thanks, Oliver!
+  /** TODO: "moving form label" https://codepen.io/Bergability/pen/ByqyOP 
+   * - does not work if an input field is not required (I have yet to figure out how to make it work - maybe it's possible)
+   * - is not accessible via screen reader, as is
+  */
   return (
-    <div className={styles.nvInputField}>
-      <label className="visually-hidden" htmlFor={name}> 
-        {label}
-      </label>
+    <div className="input-field-container">
       <input
-        className={error? `${styles.error}` : ''}
+        className={ `input-field ${error ? "input-field-error" : props.disabled ? "input-field-disabled" : ""}` }
         name={name}
         onBlur={handleBlur}
         onChange={handleChange}
-        placeholder={label}
+        // placeholder={label} // cannot use w/the "moving label" approach
         required={required}
-        type='text'
+        type="text"
         {...props}
       />
+      <label htmlFor={name}> 
+        {label}
+      </label>
     </div>
   );
 }

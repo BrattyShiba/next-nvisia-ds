@@ -2,7 +2,6 @@
 import { forwardRef, PropsWithChildren } from "react";
 import { FaChevronDown, FaChevronUp, FaCheck } from "react-icons/fa";
 import * as Select from "@radix-ui/react-select";
-import styles from "./select.module.css";
 
 interface SelectProps {
   defaultValue: string;
@@ -18,7 +17,7 @@ export const Dropdown = ({
   return (
     <Select.Root defaultValue={props.defaultValue}>
       <Select.Trigger
-        className={`dropdown ${props.error ? styles.error : ""}`}
+        className={`dropdown ${props.error ? "dropdown-error" : ""}`}
         aria-label={props.label}
       >
         <Select.Value

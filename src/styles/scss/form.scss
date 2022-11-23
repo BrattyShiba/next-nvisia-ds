@@ -1,0 +1,12 @@
+// TODO: if using this approach, must create light & dark themes and reconsider form width, etc. This is just quick placeholder styling
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--nv-color-base-white);
+  width: 500px;
+  margin: 25px, auto;
+  overflow: auto;
+}
