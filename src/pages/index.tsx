@@ -21,7 +21,7 @@ export default function Home() {
   }, [isDarkTheme]);
 
   return (
-    <div data-theme={isDarkTheme ? "dark-theme" : "light-theme"}>
+    <div>
       <Head>
         <title>NV Design System</title>
         <meta name="description" content="Nvisia design system" />

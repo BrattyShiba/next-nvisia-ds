@@ -9,6 +9,7 @@ interface SelectProps {
   error?: boolean;
   placeholderText?: string;
   label: string;
+  disabled?: boolean;
 }
 
 export const Dropdown = ({
@@ -16,9 +17,9 @@ export const Dropdown = ({
   ...props
 }: PropsWithChildren<SelectProps>) => {
   return (
-    <Select.Root defaultValue={props.defaultValue}>
+    <Select.Root defaultValue={props.defaultValue} disabled={props.disabled}>
       <Select.Trigger
-        className={`dropdown ${props.error ? styles.error : ""}`}
+        className={`dropdown ${props.error ? "dropdown-error" : ""}`}
         aria-label={props.label}
       >
         <Select.Value
