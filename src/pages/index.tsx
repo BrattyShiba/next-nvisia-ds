@@ -5,6 +5,7 @@ import { InputField } from "./components/InputField";
 import { Dropdown, DropdownItem } from "./components/Dropdown";
 import { useTheme } from "./context/ThemeContext";
 import { useEffect } from "react";
+import Radios, { Radio } from "./components/Radio";
 
 export default function Home() {
   const { isDarkTheme, toggleTheme } = useTheme();
@@ -53,6 +54,13 @@ export default function Home() {
           <DropdownItem value="3">Item 3</DropdownItem>
           <DropdownItem value="4">Item 4</DropdownItem>
         </Dropdown>
+        <Radios label={"Radio Group"}>
+          <Radio value="1" label="Item 1" id="1"></Radio>
+          <Radio value="2" label="Item 2" id="2"></Radio>
+          <Radio value="3" label="Item 3" id="3"></Radio>
+          <Radio value="4" label="Item 4" id="4"></Radio>
+          <Radio value="5" label="Item 5" id="5"></Radio>
+        </Radios>
       </main>
     </div>
   );
