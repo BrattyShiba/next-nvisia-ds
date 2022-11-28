@@ -51,8 +51,9 @@ export const InputField = ({
         {label}
       </label>
       <input
+        aria-describedby={`${name}-description`}
         className={ `input-field ${error ? "input-field-error" : props.disabled ? "input-field-disabled" : ""}` }
-        name={name}
+        name={name || label}
         onBlur={handleBlur}
         onChange={handleChange}
         placeholder={label}
@@ -60,6 +61,7 @@ export const InputField = ({
         type="text"
         {...props}
       />
+      <span className="visually-hidden" id={`${name}-description`} aria-live="assertive">{error ? `${label} field is required` : ""}</span>
     </div>
   );
 }
