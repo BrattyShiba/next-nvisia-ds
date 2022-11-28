@@ -17,7 +17,7 @@ export const Dropdown = ({
   return (
     <Select.Root defaultValue={props.defaultValue}>
       <Select.Trigger
-        className={`dropdown ${props.error ? styles.error : ""}`}
+        className={`dropdown ${props.error ? "dropdown-error" : ""}`}
         aria-label={props.label}
       >
         <Select.Value
