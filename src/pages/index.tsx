@@ -46,7 +46,9 @@ export default function Home() {
             veritatis cum numquam dolor ea?
           </p>
         </div>
-        <InputField label="Full Name" name="fullName" required={true} />
+        <InputField label="Full Name" name="fullName" />
+        <InputField label="Preferred Name" name="preferredName" />
+        <InputField label="Favorite Color" name="favoriteColor" />
         <Dropdown defaultValue="1" label={"Dropdown"}>
           <DropdownItem value="1">Item 1</DropdownItem>
           <DropdownItem value="2">Item 2</DropdownItem>

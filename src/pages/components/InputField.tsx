@@ -1,35 +1,19 @@
 import React, { ChangeEvent, useState } from "react";
 
-import styles from './InputField.module.css';
-
 interface InputFieldProps {
-  /**
-   * Whether or not there's an error with the input
-   */
+  // Whether or not there's an error with the input
   hasError?: boolean;
-  /**
-   * whether or not the form field should be disabled - questionable accessibility
-   */
+  // Whether or not the form field should be disabled - questionable accessibility
   disabled?: boolean;
-  /**
-   * What the form field is for - its label, so the end user knows what to enter into the field
-   */
+  // What the form field is for - its label, so the end user knows what to enter into the field
   label: string;
-  /**
-   * Name of the form field. Submitted with the form as part of a name/value pair
-   */
+  // Name of the form field. Submitted with the form as part of a name/value pair
   name: string;
-  /**
-   * Optional handler for blur event from field
-   */
+  // Optional handler for blur event from field
    onBlur?: (e: ChangeEvent<HTMLInputElement>) => void;
-  /**
-   * Optional handler for change events in field
-   */
+  // Optional handler for change events in field
    onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
-  /**
-   * Is it required that this input field be filled in, in order to proceed?
-   */
+  // Is it required that this input field be filled in, in order to proceed? defaults to true, since the idea is we wouldn't ask if we didn't need it.
   required?: boolean;
 }
 
@@ -39,7 +23,7 @@ export const InputField = ({
   name,
   onBlur,
   onChange,
-  required = false,
+  required = true,
   ...props
 }: InputFieldProps) => {
   // ?? not sure where we want to validate - in component, in parent, or both ( :D "it depends" on the form & requirements)
@@ -61,20 +45,19 @@ export const InputField = ({
     setError(false);
   }
 
-  // TODO: add "moving form label" for somewhat better accessibility. see: https://codepen.io/Bergability/pen/ByqyOP - Thanks, Oliver!
   return (
-    <div className={styles.nvInputField}>
+    <div className="input-field-container">
       <label className="visually-hidden" htmlFor={name}> 
         {label}
       </label>
       <input
-        className={error? `${styles.error}` : ''}
+        className={ `input-field ${error ? "input-field-error" : props.disabled ? "input-field-disabled" : ""}` }
         name={name}
         onBlur={handleBlur}
         onChange={handleChange}
         placeholder={label}
         required={required}
-        type='text'
+        type="text"
         {...props}
       />
     </div>
