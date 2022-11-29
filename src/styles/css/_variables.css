@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 18 Nov 2022 22:12:38 GMT
+ * Generated on Tue, 29 Nov 2022 01:27:27 GMT
  */
 
 :root {
@@ -10,8 +10,10 @@
   --nv-color-base-gray-100: #e0e1e1;
   --nv-color-base-gray-200: #d4d8dd;
   --nv-color-base-gray-300: #303e3f;
+  --nv-color-base-gray-300-opacity-50: rgba(48, 62, 63, 0.5);
   --nv-color-base-blue-100: #a9cde3;
   --nv-color-base-blue-200: #89c8ee;
+  --nv-color-base-blue-250: #69a9d0;
   --nv-color-base-blue-300: #425d93;
   --nv-color-base-blue-400: #2c3361;
   --nv-color-base-blue-500: #003148;
