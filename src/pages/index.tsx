@@ -6,6 +6,7 @@ import { Dropdown, DropdownItem } from "./components/Dropdown";
 import { useTheme } from "./context/ThemeContext";
 import { useEffect } from "react";
 import Radios, { Radio } from "./components/Radio";
+import Toggle from "./components/Toggle";
 
 export default function Home() {
   const { isDarkTheme, toggleTheme } = useTheme();
@@ -61,6 +62,7 @@ export default function Home() {
           <Radio value="4" label="Item 4" id="4"></Radio>
           <Radio value="5" label="Item 5" id="5"></Radio>
         </Radios>
+        <Toggle></Toggle>
       </main>
     </div>
   );
