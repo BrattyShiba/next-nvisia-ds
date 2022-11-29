@@ -8,8 +8,7 @@ interface ButtonProps {
   label: string;
   mode?: "primary" | "secondary";
   name?: string,
-  onClick?(): () => {},
-  restProps?: any,
+  onClick?(): () => {}
 }
 
 export const Button = ({
@@ -19,7 +18,7 @@ export const Button = ({
   mode = "primary",
   name,
   onClick,
-  restProps,
+  ...props
 }: ButtonProps) => {
   function handleClick() {
     console.log(`button ${name} was clicked`);
@@ -27,7 +26,6 @@ export const Button = ({
       onClick();
     }
   }
-  // const titlecasedLabel = toTitleCase(label);
 
   return (
     <div className="nvButton">
@@ -37,7 +35,7 @@ export const Button = ({
         disabled={disabled}
         name={name || label}
         onClick={handleClick}
-        {...restProps}
+        {...props}
       >
         {toTitleCase(label)}
       </button>

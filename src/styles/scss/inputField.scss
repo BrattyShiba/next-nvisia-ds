@@ -39,8 +39,6 @@
   }
 }
 .input-field-container {
-  // display: flex;
-  //   align-items: stretch;
   .input-field {
       color: var(--input-text-color);
       font-size: var(--nv-font-size-base);
@@ -52,6 +50,9 @@
       margin: 10px 0;
       padding: 5px 10px;
       min-width: 250px;
+      &::placeholder {
+        color: var(--input-text-color);
+      }
       &-error {
         border-color: var(--input-border-color-error);
         &::placeholder {
