@@ -1,0 +1,10 @@
+{
+  "radii": {
+    "none": {
+      "value": 0
+    },
+    "base": {
+      "value": "3px 3px 3px 3px"
+    }
+  }
+}

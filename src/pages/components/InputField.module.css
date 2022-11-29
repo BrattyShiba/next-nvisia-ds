@@ -1,0 +1,30 @@
+/* TODO: argh, how do I get fonts to load? And where do I find this 'Mic 32 New Rounded' font? Google font Maven Pro is similar (and free) */
+
+.nvInputField {
+  font-size: var(--nv-font-size-base);
+  color: var(--nv-background-color-dark);
+}
+.nvInputField label {
+  text-transform: lowercase;
+  padding: 0.25rem;
+}
+.nvInputField input {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--nv-color-base-blue-100);
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+}
+.nvInputField input:hover {
+  background-color: var(--nv-color-base-blue-100-opacity-20);
+  border-color: var(--nv-color-base-green-200);
+}
+.nvInputField input:disabled {
+  background-color: var(--nv-color-base-white);
+  border-color: var(--nv-color-base-gray-100);
+  color: var(--nv-color-base-gray-100);
+}
+.nvInputField input.error {
+  border-color: var(--nv-color-base-red-300);
+  color: var(--nv-color-base-red-300);
+}
