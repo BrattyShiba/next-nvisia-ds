@@ -62,7 +62,7 @@ export default function Home() {
           <Radio value="4" label="Item 4" id="4"></Radio>
           <Radio value="5" label="Item 5" id="5"></Radio>
         </Radios>
-        <Toggle></Toggle>
+        <Toggle id="Toggle" label="Label Toggle"></Toggle>
       </main>
     </div>
   );
