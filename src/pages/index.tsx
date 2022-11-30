@@ -6,6 +6,7 @@ import { InputField } from "./components/InputField";
 import { Dropdown, DropdownItem } from "./components/Dropdown";
 import { useTheme } from "./context/ThemeContext";
 import { useEffect } from "react";
+import { AccordionElement } from "./components/Accordion";
 
 export default function Home() {
   const { isDarkTheme, toggleTheme } = useTheme();
@@ -47,7 +48,8 @@ export default function Home() {
             veritatis cum numquam dolor ea?
           </p>
         </div>
-        <Button label="cliCK ME" name="CTAButton1" mode="secondary" />
+        <Button label="cliCK ME" name="CTAButton1" mode="primary" />
+        <Button label="Also ME" name="CTAButton2" mode="secondary" />
         <InputField label="Full Name" name="fullName" />
         <InputField label="Preferred Name" name="preferredName" />
         <InputField label="Favorite Color" name="favoriteColor" />
@@ -57,6 +59,8 @@ export default function Home() {
           <DropdownItem value="3">Item 3</DropdownItem>
           <DropdownItem value="4">Item 4</DropdownItem>
         </Dropdown>
+        <p>Below, find an accordion element!</p>
+        <AccordionElement/>
       </main>
     </div>
   );

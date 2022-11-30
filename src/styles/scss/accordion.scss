@@ -1,0 +1,29 @@
+[data-theme="light-theme"] {
+  --accordian-text-color: var(--nv-elements-color-light-accent);
+
+}
+[data-theme="dark-theme"] {
+  --accordian-text-color: var(--nv-elements-color-dark-accent);
+
+}
+
+.accordion-root {
+  display: flex;
+  flex-direction: column;
+  // --radix-accordion-content-width
+  // --radix-accordion-content-height
+  
+  .accordion-trigger {
+    color: var(--accordian-text-color);
+  }
+  .accordion-trigger[data-state="closed"] > .accordion-icon::after {
+    content: " +";
+  }
+  .accordion-trigger[data-state="open"] > .accordion-icon::after {
+    content: " -";
+  }
+  .accordion-item {
+    border-bottom: 2px solid var(--nv-color-base-blue-100);
+  }
+
+}
