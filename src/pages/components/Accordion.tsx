@@ -24,7 +24,8 @@ export const AccordionElement = ({
           >
             <Accordion.Header>
               <Accordion.Trigger>
-                {child.props.trigger}
+                <span className="trigger-text">{child.props.trigger}</span>
+                <span className="accordion-icon"></span>
               </Accordion.Trigger>
             </Accordion.Header>
             <Accordion.Content>
@@ -48,7 +49,6 @@ export const AccordionItem = forwardRef(({ children, ...props}: any, forwardedRe
     </Accordion.Item>
   );
 });
-
 
 export const AccordionTrigger = React.forwardRef(({ children, className, ...props }: any, forwardedRef) => {
   return (
@@ -74,6 +74,5 @@ export const AccordionContent = React.forwardRef(({ children, className, ...prop
     {children}
   </Accordion.Content>
 ));
-
 
 export default AccordionElement;

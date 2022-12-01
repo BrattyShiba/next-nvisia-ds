@@ -1,27 +1,37 @@
 [data-theme="light-theme"] {
   --accordian-text-color: var(--nv-elements-color-light-accent);
+
 }
 [data-theme="dark-theme"] {
   --accordian-text-color: var(--nv-elements-color-dark-accent);
+
 }
 
 .accordion-root {
   display: flex;
   flex-direction: column;
+  width: 75%;
+  margin: 0 auto;
+  // the above 75% is a guesstimate of the average width accordions take up in the mock-up
+  // we might want a standardized width? & make it a variable?
 
   .accordion-item {
+    padding: 20px 0 5px;
     border-bottom: 2px solid var(--nv-color-base-blue-100);
-    padding: 10px 0 5px;
-    overflow: scroll;
-    h3 {
+
+    & button {
       color: var(--accordian-text-color);
-    }
-    &[data-state="closed"] > h3::after {
-      content: " +";
-    }
-    &[data-state="open"] > h3::after {
-      content: " -";
+      font-size: var(--nv-font-size-medium);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      &[data-state="closed"] .accordion-icon::after {
+        content: "+";
+      }
+      &[data-state="open"] .accordion-icon::after {
+        content: "-";
+      }
     }
   }
-
 }
