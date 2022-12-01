@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import { Button } from "./components/Button";
 import { InputField } from "./components/InputField";
 import { Dropdown, DropdownItem } from "./components/Dropdown";
 import { useTheme } from "./context/ThemeContext";
@@ -50,7 +51,10 @@ export default function Home() {
             veritatis cum numquam dolor ea?
           </p>
         </div>
-        <InputField label="Full Name" name="fullName" required={true} />
+        <Button label="cliCK ME" name="CTAButton1" mode="secondary" />
+        <InputField label="Full Name" name="fullName" />
+        <InputField label="Preferred Name" name="preferredName" />
+        <InputField label="Favorite Color" name="favoriteColor" />
         <Dropdown defaultValue="1" label={"Dropdown"}>
           <DropdownItem value="1">Item 1</DropdownItem>
           <DropdownItem value="2">Item 2</DropdownItem>

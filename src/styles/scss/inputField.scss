@@ -1,0 +1,76 @@
+[data-theme="light-theme"] {
+  .input-field {
+    --input-text-color: var(--nv-color-font-base);
+    --input-background-color: var(--nv-background-color-light);
+    --input-border-color: var(--nv-color-base-blue-100);
+    &-error {
+      --input-text-color-error: var(--nv-color-base-red-300);
+      --input-border-color-error: var(--nv-color-base-red-300);
+    }
+    &-disabled {
+      --input-text-color-disabled: var(--nv-color-base-gray-200);
+      --input-border-color-disabled: var(--nv-color-base-gray-200);
+    }
+    &:hover {
+      --input-text-color-hover: var(--nv-color-font-base);
+      --input-background-color-hover: var(--nv-color-base-blue-100-opacity-20);
+      --input-border-color-hover: var(--nv-color-font-secondary);
+    }
+  }
+}
+[data-theme="dark-theme"] {
+  .input-field {
+    --input-text-color: var(--nv-elements-color-dark-body);--input-background-color: var(--nv-background-color-dark);
+    --input-border-color: border-color: var(--nv-color-base-blue-100);
+    &-error {
+      --input-text-color-error: var(--nv-color-base-red-200);
+      
+      --input-border-color-error: var(--nv-color-base-red-200);
+    }
+    &-disabled {
+      --input-text-color-disabled: var(--nv-color-base-gray-200-opacity-50);
+      --input-border-color-disabled: var(--nv-color-base-gray-200-opacity-50);
+    }
+    &:hover {
+      --input-text-color-hover: var(--nv-elements-color-dark-accent);
+      --input-background-color-hover: var(--nv-color-base-blue-100-opacity-20);
+      --input-border-color-hover: var(--nv-color-base-blue-100);
+    }
+  }
+}
+.input-field-container {
+  .input-field {
+      color: var(--input-text-color);
+      font-size: var(--nv-font-size-base);
+      background-color: var(--input-background-color);
+      border-color: var(--input-border-color);
+      border-width: 1px;
+      border-style: solid;
+      border-radius: var(--nv-radii-base);
+      margin: 10px 0;
+      padding: 5px 10px;
+      min-width: 250px;
+      &::placeholder {
+        color: var(--input-text-color);
+      }
+      &-error {
+        border-color: var(--input-border-color-error);
+        &::placeholder {
+          color: var(--input-text-color-error);
+        }
+      }
+      &-disabled {
+        border-color: var(--input-border-color-disabled);
+        &::placeholder {
+          color: var(--input-text-color-disabled);
+        }
+      }
+      &:hover {
+        border-color: var(--input-border-color-hover);
+        background-color: var(--input-background-color-hover);
+        &::placeholder {
+          color: var(--input-text-color-hover);
+        }
+      }
+  }
+}
