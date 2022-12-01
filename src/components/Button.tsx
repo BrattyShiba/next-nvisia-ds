@@ -21,7 +21,7 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   function handleClick() {
-    console.log(`button ${name} was clicked`);
+    // any handling we want to do?
     if (onClick) {
       onClick();
     }

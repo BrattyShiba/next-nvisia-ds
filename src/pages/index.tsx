@@ -8,6 +8,7 @@ import { useTheme } from "./context/ThemeContext";
 import { useEffect } from "react";
 import { Radios, Radio } from "../components/Radio";
 import Toggle from "../components/Toggle";
+import { AccordionElement, AccordionItem } from "../components/Accordion";
 
 export default function Home() {
   const { isDarkTheme, toggleTheme } = useTheme();
@@ -52,10 +53,16 @@ export default function Home() {
         <Button label="cliCK ME 1" name="CTAButton1a" mode="primary" />
         <Button label="cliCK ME 2" name="CTAButton1b" mode="primary" disabled />
         <Button label="cliCK ME 3" name="CTAButton2a" mode="secondary" />
-        <Button label="cliCK ME 4" name="CTAButton2b" mode="secondary" disabled />
+        <Button
+          label="cliCK ME 4"
+          name="CTAButton2b"
+          mode="secondary"
+          disabled
+        />
         <InputField label="Full Name" name="fullName" />
         <InputField label="Preferred Name" name="preferredName" />
         <InputField label="Favorite Color" name="favoriteColor" />
+
         <Dropdown defaultValue="1" label={"Dropdown"}>
           <DropdownItem value="1">Item 1</DropdownItem>
           <DropdownItem value="2">Item 2</DropdownItem>
@@ -70,6 +77,22 @@ export default function Home() {
           <Radio value="5" label="Item 5" id="5"></Radio>
         </Radios>
         <Toggle></Toggle>
+
+        <p>
+          Below, find an accordion that allows multiple items open at a time!
+        </p>
+        <AccordionElement mode="multiple">
+          <AccordionItem
+            value="item 1"
+            trigger="What's This"
+            content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam doloribus et fuga. Voluptates nobis porro assumenda, magnam accusantium doloremque recusandae aperiam, perspiciatis aut at amet veritatis cum numquam dolor ea?"
+          />
+          <AccordionItem
+            value="item 2"
+            trigger="How Cool Is This"
+            content="Pretty darned cool, if you ask me."
+          />
+        </AccordionElement>
       </main>
     </div>
   );
