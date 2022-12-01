@@ -12,8 +12,6 @@ export const AccordionElement = ({
   mode = "multiple",
   ...props
 }: PropsWithChildren<AccordionProps>) => {
-console.log('in Acc.Element, props = ', props);
-console.log('in Acc.Element, children = ', children);
 
   return (
     <Accordion.Root className="accordion-root" type={mode}>
