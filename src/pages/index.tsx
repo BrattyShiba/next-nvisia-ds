@@ -51,7 +51,12 @@ export default function Home() {
             veritatis cum numquam dolor ea?
           </p>
         </div>
-        <Button label="cliCK ME" name="CTAButton1" mode="secondary" />
+        <Button
+          label="cliCK ME"
+          name="CTAButton1"
+          mode="secondary"
+          disabled={true}
+        />
         <InputField label="Full Name" name="fullName" />
         <InputField label="Preferred Name" name="preferredName" />
         <InputField label="Favorite Color" name="favoriteColor" />
@@ -70,9 +75,18 @@ export default function Home() {
         </Radios>
         <Toggle id="Toggle" label="Label Toggle"></Toggle>
         <CheckBox label="Checkbox" id="id1" />
-        <Modal>
-          <ModalContent>
-            <h1>Hello World!</h1>
+        <Modal buttonLabel="Open Modal" name="buttonModal" mode="primary">
+          <ModalContent
+            closeModal="Close Modal"
+            name="closeModal"
+            mode="primary"
+          >
+            <h2>Modal Window</h2>
+            <h3>Excepteur sint occaecat cupidatat</h3>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia
+            </p>
           </ModalContent>
         </Modal>
       </main>

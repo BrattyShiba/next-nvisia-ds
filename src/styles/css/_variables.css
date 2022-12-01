@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 29 Nov 2022 01:27:27 GMT
+ * Generated on Thu, 01 Dec 2022 05:18:51 GMT
  */
 
 :root {
@@ -20,6 +20,7 @@
   --nv-color-base-blue-100-opacity-10: rgba(169, 205, 227, 0.1);
   --nv-color-base-blue-100-opacity-20: rgba(169, 205, 227, 0.2);
   --nv-color-base-blue-100-opacity-25: rgba(169, 205, 227, 0.25);
+  --nv-color-base-blue-500-opacity-80: rgba(0, 49, 72, 0.5);
   --nv-color-base-red-100: #f49e10;
   --nv-color-base-red-200: #e46528;
   --nv-color-base-red-300: #a42643;

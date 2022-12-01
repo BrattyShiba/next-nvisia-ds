@@ -1,13 +1,33 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { PropsWithChildren } from "react";
+import { Button } from "./Button";
 
-const Modal = ({ children, ...props }: PropsWithChildren) => {
+interface ModalProps {
+  buttonLabel: string;
+  name: string;
+  mode: "primary" | "secondary";
+  disabled?: boolean;
+}
+
+const Modal = ({
+  children,
+  buttonLabel,
+  name,
+  mode,
+  disabled,
+  ...props
+}: PropsWithChildren<ModalProps>) => {
   return (
     <Dialog.Root>
-      <Dialog.Trigger>
-        <button>Button Text</button>
+      <Dialog.Trigger asChild>
+        <Button
+          label={buttonLabel}
+          name={name}
+          mode={mode}
+          disabled={disabled}
+        />
       </Dialog.Trigger>
-      <Dialog.Portal>
+      <Dialog.Portal className="modal">
         <Dialog.Overlay className="modal-overlay" />
         {children}
       </Dialog.Portal>
@@ -15,12 +35,24 @@ const Modal = ({ children, ...props }: PropsWithChildren) => {
   );
 };
 
-export const ModalContent = ({ children, ...props }: PropsWithChildren) => {
+interface ModalContentProps {
+  closeModal: string;
+  name: string;
+  mode: "primary" | "secondary";
+}
+
+export const ModalContent = ({
+  children,
+  closeModal,
+  name,
+  mode,
+  ...props
+}: PropsWithChildren<ModalContentProps>) => {
   return (
     <Dialog.Content className="modal-content">
       {children}
       <Dialog.Close>
-        <button>Button Close</button>
+        <Button label={closeModal} name={name} mode={mode} />
       </Dialog.Close>
     </Dialog.Content>
   );
