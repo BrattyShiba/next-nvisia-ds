@@ -47,7 +47,10 @@ export default function Home() {
             veritatis cum numquam dolor ea?
           </p>
         </div>
-        <Button label="cliCK ME" name="CTAButton1" mode="secondary" />
+        <Button label="cliCK ME 1" name="CTAButton1a" mode="primary" />
+        <Button label="cliCK ME 2" name="CTAButton1b" mode="primary" disabled />
+        <Button label="cliCK ME 3" name="CTAButton2a" mode="secondary" />
+        <Button label="cliCK ME 4" name="CTAButton2b" mode="secondary" disabled />
         <InputField label="Full Name" name="fullName" />
         <InputField label="Preferred Name" name="preferredName" />
         <InputField label="Favorite Color" name="favoriteColor" />
