@@ -1,18 +1,18 @@
 import React from "react";
 
-import { toTitleCase } from "../../utilities";
+import { toTitleCase } from "../utilities";
 
 interface ButtonProps {
   disabled?: boolean;
   type?: "button" | "submit";
   label: string;
   mode?: "primary" | "secondary";
-  name?: string,
-  onClick?(): () => {}
+  name?: string;
+  onClick?(): () => {};
 }
 
 export const Button = ({
-  disabled,
+  disabled = false,
   type = "button",
   label,
   mode = "primary",
@@ -21,7 +21,7 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   function handleClick() {
-    console.log(`button ${name} was clicked`);
+    // any handling we want to do?
     if (onClick) {
       onClick();
     }
@@ -40,5 +40,5 @@ export const Button = ({
         {toTitleCase(label)}
       </button>
     </div>
-  )
-}
+  );
+};

@@ -1,13 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
 
-import { Button } from "./components/Button";
-import { InputField } from "./components/InputField";
-import { Dropdown, DropdownItem } from "./components/Dropdown";
+import { Button } from "../components/Button";
+import { InputField } from "../components/InputField";
+import { Dropdown, DropdownItem } from "../components/Dropdown";
 import { useTheme } from "./context/ThemeContext";
 import { useEffect } from "react";
-import Radios, { Radio } from "./components/Radio";
-import Toggle from "./components/Toggle";
+import { Radios, Radio } from "../components/Radio";
+import Toggle from "../components/Toggle";
+import { AccordionElement, AccordionItem } from "../components/Accordion";
 import CheckBox from "./components/Checkbox";
 import Modal, { ModalContent } from "./components/Modal";
 
@@ -51,15 +52,19 @@ export default function Home() {
             veritatis cum numquam dolor ea?
           </p>
         </div>
+        <Button label="cliCK ME 1" name="CTAButton1a" mode="primary" />
+        <Button label="cliCK ME 2" name="CTAButton1b" mode="primary" disabled />
+        <Button label="cliCK ME 3" name="CTAButton2a" mode="secondary" />
         <Button
-          label="cliCK ME"
-          name="CTAButton1"
+          label="cliCK ME 4"
+          name="CTAButton2b"
           mode="secondary"
-          disabled={true}
+          disabled
         />
         <InputField label="Full Name" name="fullName" />
         <InputField label="Preferred Name" name="preferredName" />
         <InputField label="Favorite Color" name="favoriteColor" />
+
         <Dropdown defaultValue="1" label={"Dropdown"}>
           <DropdownItem value="1">Item 1</DropdownItem>
           <DropdownItem value="2">Item 2</DropdownItem>
@@ -73,7 +78,23 @@ export default function Home() {
           <Radio value="4" label="Item 4" id="4"></Radio>
           <Radio value="5" label="Item 5" id="5"></Radio>
         </Radios>
-        <Toggle id="Toggle" label="Label Toggle"></Toggle>
+        <Toggle></Toggle>
+
+        <p>
+          Below, find an accordion that allows multiple items open at a time!
+        </p>
+        <AccordionElement mode="multiple">
+          <AccordionItem
+            value="item 1"
+            trigger="What's This"
+            content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam doloribus et fuga. Voluptates nobis porro assumenda, magnam accusantium doloremque recusandae aperiam, perspiciatis aut at amet veritatis cum numquam dolor ea?"
+          />
+          <AccordionItem
+            value="item 2"
+            trigger="How Cool Is This"
+            content="Pretty darned cool, if you ask me."
+          />
+        </AccordionElement>
         <CheckBox label="Checkbox" id="id1" />
         <Modal buttonLabel="Open Modal" name="buttonModal" mode="primary">
           <ModalContent
