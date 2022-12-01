@@ -7,6 +7,8 @@ import { useTheme } from "./context/ThemeContext";
 import { useEffect } from "react";
 import Radios, { Radio } from "./components/Radio";
 import Toggle from "./components/Toggle";
+import CheckBox from "./components/Checkbox";
+import Modal, { ModalContent } from "./components/Modal";
 
 export default function Home() {
   const { isDarkTheme, toggleTheme } = useTheme();
@@ -63,6 +65,12 @@ export default function Home() {
           <Radio value="5" label="Item 5" id="5"></Radio>
         </Radios>
         <Toggle id="Toggle" label="Label Toggle"></Toggle>
+        <CheckBox label="Checkbox" id="id1" />
+        <Modal>
+          <ModalContent>
+            <h1>Hello World!</h1>
+          </ModalContent>
+        </Modal>
       </main>
     </div>
   );
