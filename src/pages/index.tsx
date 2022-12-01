@@ -9,8 +9,8 @@ import { useEffect } from "react";
 import { Radios, Radio } from "../components/Radio";
 import Toggle from "../components/Toggle";
 import { AccordionElement, AccordionItem } from "../components/Accordion";
-import CheckBox from "./components/Checkbox";
-import Modal, { ModalContent } from "./components/Modal";
+import CheckBox from "../components/Checkbox";
+import Modal, { ModalContent } from "../components/Modal";
 
 export default function Home() {
   const { isDarkTheme, toggleTheme } = useTheme();
