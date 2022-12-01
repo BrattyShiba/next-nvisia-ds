@@ -1,4 +1,4 @@
-import { Dropdown, DropdownItem } from ".././src/pages/components/Dropdown";
+import { Dropdown, DropdownItem } from "../src/components/Dropdown";
 import ThemeProvider from "../src/pages/context/ThemeContext";
 
 export default {

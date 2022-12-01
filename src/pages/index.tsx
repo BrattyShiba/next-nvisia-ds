@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 
-import { Button } from "./components/Button";
-import { InputField } from "./components/InputField";
-import { Dropdown, DropdownItem } from "./components/Dropdown";
+import { Button } from "../components/Button";
+import { InputField } from "../components/InputField";
+import { Dropdown, DropdownItem } from "../components/Dropdown";
 import { useTheme } from "./context/ThemeContext";
 import { useEffect } from "react";
-import Radios, { Radio } from "./components/Radio";
-import Toggle from "./components/Toggle";
+import { Radios, Radio } from "../components/Radio";
+import Toggle from "../components/Toggle";
 
 export default function Home() {
   const { isDarkTheme, toggleTheme } = useTheme();
