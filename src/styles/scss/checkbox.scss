@@ -1,0 +1,40 @@
+[data-theme="light-theme"] {
+  .checkbox-container {
+    --checked-background: var(--nv-color-base-green-200);
+    --error-color: var(--nv-color-base-red-300);
+  }
+}
+[data-theme="dark-theme"] {
+  .checkbox-container {
+    --checked-background: var(--nv-color-base-green-100);
+    --error-color: var(--nv-color-base-red-200);
+  }
+}
+.checkbox {
+  background-color: var(--nv-background-color);
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  border: 2px solid var(--nv-color-base-blue-100);
+  &-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &-indicator {
+    display: grid;
+    place-items: center;
+    color: var(--nv-background-color);
+    font-size: var(--nv-font-size-small);
+  }
+  &[aria-checked="true"] {
+    background-color: var(--checked-background);
+    border: 2px solid var(--checked-background);
+  }
+  &-error {
+    color: var(--error-color);
+    .checkbox {
+      border: 2px solid var(--error-color);
+    }
+  }
+}
