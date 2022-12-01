@@ -78,7 +78,7 @@ export default function Home() {
           <Radio value="4" label="Item 4" id="4"></Radio>
           <Radio value="5" label="Item 5" id="5"></Radio>
         </Radios>
-        <Toggle></Toggle>
+        <Toggle id="ID1" label="Toggle Label"></Toggle>
 
         <p>
           Below, find an accordion that allows multiple items open at a time!
