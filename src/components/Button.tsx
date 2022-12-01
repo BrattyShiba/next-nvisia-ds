@@ -12,7 +12,7 @@ interface ButtonProps {
 }
 
 export const Button = ({
-  disabled,
+  disabled = false,
   type = "button",
   label,
   mode = "primary",
