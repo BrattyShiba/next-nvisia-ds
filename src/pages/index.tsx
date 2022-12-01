@@ -65,8 +65,8 @@ export default function Home() {
 
         <p>Below, find an accordion that allows multiple items open at a time!</p>
         <AccordionElement mode="multiple">
-          <AccordionItem value="item 1" trigger="What's This?" content= "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam doloribus et fuga. Voluptates nobis porro assumenda, magnam accusantium doloremque recusandae aperiam, perspiciatis aut at amet veritatis cum numquam dolor ea?" />
-          <AccordionItem value="item 2" trigger="How Cool Is This?" content="Pretty darned cool, if you ask me." />
+          <AccordionItem value="item 1" trigger="What's This" content= "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam doloribus et fuga. Voluptates nobis porro assumenda, magnam accusantium doloremque recusandae aperiam, perspiciatis aut at amet veritatis cum numquam dolor ea?" />
+          <AccordionItem value="item 2" trigger="How Cool Is This" content="Pretty darned cool, if you ask me." />
         </AccordionElement>
       </main>
     </div>
