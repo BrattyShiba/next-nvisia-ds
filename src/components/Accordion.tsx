@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React, { forwardRef, PropsWithChildren } from "react";
 import * as Accordion from "@radix-ui/react-accordion";
 
