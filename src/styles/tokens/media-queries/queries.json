@@ -1,19 +1,19 @@
 {
-    "mediaQuery": {
-        "smallScreen": {
-            "value": "'only screen and (min-width: 767px)'"
-        },
-        "mediumScreen": { 
-            "value": "'only screen and (min-width: 768px)'"
-        },
-        "largeScreen": { 
-            "value": "'only screen and (min-width: 1025px)'"
-        },
-        "xLargeScreen": { 
-            "value": "'only screen and (min-width: 1200px)'"
-        },
-        "xxLargeScreen": { 
-            "value": "'only screen and (min-width: 1400px)'"
-        }
+  "mediaQuery": {
+    "smallScreen": {
+      "value": "'767px'"
+    },
+    "mediumScreen": {
+      "value": "'768px'"
+    },
+    "largeScreen": {
+      "value": "'1025px'"
+    },
+    "xLargeScreen": {
+      "value": "'1200px'"
+    },
+    "xxLargeScreen": {
+      "value": "'1400px'"
     }
+  }
 }

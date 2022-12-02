@@ -8,7 +8,7 @@ interface ButtonProps {
   label: string;
   mode?: "primary" | "secondary";
   name?: string;
-  onClick?(): () => {};
+  onClickEvent?(): () => {};
 }
 
 export const Button = ({
@@ -17,13 +17,13 @@ export const Button = ({
   label,
   mode = "primary",
   name,
-  onClick,
+  onClickEvent,
   ...props
 }: ButtonProps) => {
   function handleClick() {
     // any handling we want to do?
-    if (onClick) {
-      onClick();
+    if (onClickEvent) {
+      onClickEvent();
     }
   }
 

@@ -25,6 +25,7 @@ const Modal = ({
           name={name}
           mode={mode}
           disabled={disabled}
+          type="button"
         />
       </Dialog.Trigger>
       <Dialog.Portal className="modal">
@@ -49,9 +50,9 @@ export const ModalContent = ({
   ...props
 }: PropsWithChildren<ModalContentProps>) => {
   return (
-    <Dialog.Content className="modal-content">
+    <Dialog.Content className="modal-content" data-theme="light-theme">
       {children}
-      <Dialog.Close>
+      <Dialog.Close className="modal-close">
         <Button label={closeModal} name={name} mode={mode} />
       </Dialog.Close>
     </Dialog.Content>
