@@ -3,19 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "style-dictionary build && next dev",
+    "build": "style-dictionary build && next build",
+    "start": "style-dictionary build && next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build-tokens": "style-dictionary build"
   },
   "dependencies": {
     "@next/font": "^13.0.4",
+    "@radix-ui/react-accordion": "^1.0.1",
     "@radix-ui/react-checkbox": "^1.0.1",
     "@radix-ui/react-dialog": "^1.0.2",
     "@radix-ui/react-radio-group": "^1.1.0",
-    "@radix-ui/react-accordion": "^1.0.1",
     "@radix-ui/react-select": "^1.1.2",
     "@radix-ui/react-switch": "^1.0.1",
     "@types/node": "18.11.9",
