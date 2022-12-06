@@ -1,0 +1,54 @@
+@use "../abstracts/variables" as *;
+[data-theme="light-theme"] {
+  .card {
+    --card-background: var(--nv-color-base-blue-500);
+    --nv-elements-color-h3: var(--nv-color-base-blue-200);
+    --nv-elements-color: var(--nv-color-base-white);
+    --nv-elements-color-accent: var(--nv-color-base-green-100);
+  }
+}
+[data-theme="dark-theme"] {
+  .card {
+    --card-background: var(--nv-color-base-blue-100);
+    --nv-elements-color-h3: var(--nv-color-base-red-300);
+    --nv-elements-color: var(--nv-color-base-blue-500);
+    --nv-elements-color-accent: var(--nv-color-base-blue-300);
+  }
+}
+.card {
+  position: relative;
+  display: flex;
+  flex: 1 0 20%;
+  flex-direction: column;
+  background-color: var(--card-background);
+  padding-top: calc(50%);
+  @media #{$mq-mediumScreen} {
+    padding-top: 0;
+    max-width: min(25vw, 335px);
+  }
+  img {
+    aspect-ratio: 1/1;
+    position: absolute;
+    max-width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    margin: 0 auto;
+    top: -20%;
+    left: 0;
+    right: 0;
+    @media #{$mq-mediumScreen} {
+      max-width: inherit;
+      height: inherit;
+      position: relative;
+      top: 0;
+      border-radius: 0;
+    }
+  }
+  &-content {
+    padding: 30px;
+    button {
+      margin-block: 10px 0px;
+      margin-inline: -5px 0px;
+    }
+  }
+}

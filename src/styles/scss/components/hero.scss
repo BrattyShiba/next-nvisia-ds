@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as *;
+.hero {
+  display: block;
+  position: relative;
+  min-height: 780px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+  img {
+    object-fit: cover;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background: var(--nv-background-color);
+    clip-path: polygon(43% 0, 46% 80%, 49% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+  &-content {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+
+    padding: 45px;
+    background-color: var(--nv-background-color-dark);
+    @media #{$mq-mediumScreen} {
+      top: 150px;
+      width: 33%;
+      max-width: min(30vw, 650px);
+    }
+    h2 {
+      color: var(--nv-color-base-green-100);
+    }
+    h3 {
+      color: var(--nv-color-base-red-100);
+    }
+    &-children {
+      margin: 30px 0px 0px -5px;
+    }
+  }
+}

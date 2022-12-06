@@ -6,14 +6,20 @@
     --button-border-color: none;
     --button-border-width: none;
     --button-border-style: none;
-    --button-drop-shadow-color: var(--nv-color-base-gray-200);
+    --button-drop-shadow-color: none;
     --button-height: 38px;
-    --box-shadow-x: 0px; 
-    --box-shadow-y: 3px; 
+    --box-shadow-x: 0px;
+    --box-shadow-y: 3px;
     --box-shadow-blur: 6px;
-    --box-shadow-color: var(--nv-color-base-gray-200);
-    &:hover, &:focus {
-      --button-background-gradient: transparent linear-gradient(104deg, var(--nv-color-base-red-300) 0%, var(--nv-color-base-red-200) 100%);
+    --box-shadow-color: none;
+    &:hover,
+    &:focus {
+      --button-background-gradient: transparent
+        linear-gradient(
+          104deg,
+          var(--nv-color-base-red-300) 0%,
+          var(--nv-color-base-red-200) 100%
+        );
       --button-border-color: none;
       --button-border-width: none;
       --button-border-style: none;
@@ -29,8 +35,8 @@
       --button-background-color: var(--nv-color-base-gray-200);
       --button-border-width: none;
       --button-border-style: none;
-      --box-shadow-x: none; 
-      --box-shadow-y: none; 
+      --box-shadow-x: none;
+      --box-shadow-y: none;
       --box-shadow-blur: none;
       --box-shadow-color: none;
     }
@@ -44,11 +50,12 @@
     --button-background-color: var(--nv-color-base-white);
     --button-drop-shadow-color: var(--nv-color-base-gray-200);
     --button-height: 28px;
-    --box-shadow-x: 0px; 
-    --box-shadow-y: 3px; 
+    --box-shadow-x: 0px;
+    --box-shadow-y: 3px;
     --box-shadow-blur: 6px;
     --box-shadow-color: var(--nv-color-base-gray-200);
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       --button-background-color: var(--nv-color-font-tertiary);
       --button-border-color: var(--nv-color-font-tertiary);
       --button-border-width: 2px;
@@ -64,8 +71,8 @@
       --button-text-color: var(--nv-color-base-gray-300-opacity-50);
       --button-background-color: var(--nv-color-base-gray-200);
       --button-border-color: var(--nv-color-base-gray-200);
-      --box-shadow-x: none; 
-      --box-shadow-y: none; 
+      --box-shadow-x: none;
+      --box-shadow-y: none;
       --box-shadow-blur: none;
       --box-shadow-color: none;
     }
@@ -81,12 +88,18 @@
     --button-border-style: none;
     --button-drop-shadow-color: var(--nv-color-base-gray-200);
     --button-height: 38px;
-    --box-shadow-x: none; 
-    --box-shadow-y: none; 
+    --box-shadow-x: none;
+    --box-shadow-y: none;
     --box-shadow-blur: none;
     --box-shadow-color: none;
-    &:hover, &:focus {
-      --button-background-gradient: transparent linear-gradient(104deg, var(--nv-color-base-red-300) 0%, var(--nv-color-base-red-200) 100%);
+    &:hover,
+    &:focus {
+      --button-background-gradient: transparent
+        linear-gradient(
+          104deg,
+          var(--nv-color-base-red-300) 0%,
+          var(--nv-color-base-red-200) 100%
+        );
     }
     &:active {
       --button-background-color: var(--nv-color-base-red-200);
@@ -94,8 +107,8 @@
     &.disabled {
       --button-text-color: var(--nv-color-base-gray-300-opacity-50);
       --button-background-color: var(--nv-color-base-gray-200);
-      --box-shadow-x: none; 
-      --box-shadow-y: none; 
+      --box-shadow-x: none;
+      --box-shadow-y: none;
       --box-shadow-blur: none;
       --box-shadow-color: none;
     }
@@ -109,11 +122,12 @@
     --button-background-color: var(--nv-background-color-dark);
     --button-drop-shadow-color: var(--nv-color-base-gray-200);
     --button-height: 28px;
-    --box-shadow-x: none; 
-    --box-shadow-y: none; 
+    --box-shadow-x: none;
+    --box-shadow-y: none;
     --box-shadow-blur: none;
     --box-shadow-color: none;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       --button-background-color: var(--nv-color-font-tertiary);
       --button-border-width: 2px;
       --button-border-style: solid;
@@ -128,8 +142,8 @@
       --button-text-color: var(--nv-color-base-gray-300-opacity-50);
       --button-background-color: var(--nv-color-base-gray-200);
       --button-border-color: var(--nv-color-base-gray-200);
-      --box-shadow-x: none; 
-      --box-shadow-y: none; 
+      --box-shadow-x: none;
+      --box-shadow-y: none;
       --box-shadow-blur: none;
       --box-shadow-color: none;
     }
@@ -147,16 +161,18 @@ div.nvButton {
     font-weight: var(--button-font-weight);
     color: var(--button-text-color);
 
-    box-shadow: var(--box-shadow-x) var(--box-shadow-y) var(--box-shadow-blur) var(--box-shadow-color);
+    box-shadow: var(--box-shadow-x) var(--box-shadow-y) var(--box-shadow-blur)
+      var(--box-shadow-color);
 
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0px 10px;
     background-color: var(--button-background-color);
-    min-height: var(--button-height); 
+    min-height: var(--button-height);
     min-width: 44px;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       border-color: var(--button-border-color);
       background: var(--button-background-gradient);
       background-color: var(--button-background-color);
@@ -170,7 +186,8 @@ div.nvButton {
       background: none;
       background-color: var(--button-background-color);
       color: var(--button-text-color);
-      box-shadow: var(--box-shadow-x) var(--box-shadow-y) var(--box-shadow-blur) var(--box-shadow-color);
+      box-shadow: var(--box-shadow-x) var(--box-shadow-y) var(--box-shadow-blur)
+        var(--box-shadow-color);
     }
   }
 }

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 05 Dec 2022 01:48:22 GMT
+ * Generated on Tue, 06 Dec 2022 03:32:41 GMT
  */
 
 :root {
@@ -17,6 +17,7 @@
   --nv-color-base-blue-300: #425d93;
   --nv-color-base-blue-400: #2c3361;
   --nv-color-base-blue-500: #003148;
+  --nv-color-base-blue-600: #001e2c;
   --nv-color-base-blue-100-opacity-10: rgba(169, 205, 227, 0.1);
   --nv-color-base-blue-100-opacity-20: rgba(169, 205, 227, 0.2);
   --nv-color-base-blue-100-opacity-25: rgba(169, 205, 227, 0.25);
@@ -70,11 +71,6 @@
   --nv-font-weight-medium: 600;
   --nv-font-weight-regular: 500;
   --nv-font-weight-light: 200;
-  --nv-media-query-small-screen: '767px';
-  --nv-media-query-medium-screen: '768px';
-  --nv-media-query-large-screen: '1025px';
-  --nv-media-query-x-large-screen: '1200px';
-  --nv-media-query-xx-large-screen: '1400px';
   --nv-radii-none: 0;
   --nv-radii-base: 3px 3px 3px 3px;
 }

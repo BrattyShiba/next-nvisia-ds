@@ -12,6 +12,9 @@ import { AccordionElement, AccordionItem } from "../components/Accordion";
 import CheckBox from "../components/Checkbox";
 import Modal, { ModalContent } from "../components/Modal";
 import { Header } from "../components/Header";
+import Hero from "../components/Hero";
+import Card from "../components/Card";
+import Gallery from "../components/Gallery";
 
 export default function Home() {
   return (
@@ -24,6 +27,15 @@ export default function Home() {
 
       <main>
         <Header />
+        <Hero
+          title="Fat Bear Week"
+          description="The 2022 CHUNKY BEAR ELECTION BEGINS"
+          image="/bear-hero.jpg"
+          imageAlt="imageAlt"
+        >
+          <Button label="Register for Voting" />
+        </Hero>
+        <Gallery />
       </main>
     </div>
   );

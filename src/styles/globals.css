@@ -13,6 +13,13 @@
   --nv-elements-color-accent: var(--nv-elements-color-light-accent);
   --nv-elements-color-link: var(--nv-elements-color-light-link);
   --nv-elements-color-block: var(--nv-elements-color-light-block);
+  --nv-background-gradient: linear-gradient(
+    0deg,
+    var(--nv-color-base-gray-100) 0%,
+    var(--nv-color-base-gray-100) 9%,
+    var(--nv-background-color) 37%,
+    var(--nv-background-color) 100%
+  );
 }
 
 [data-theme="dark-theme"] {
@@ -24,6 +31,13 @@
   --nv-elements-color-accent: var(--nv-elements-color-dark-accent);
   --nv-elements-color-link: var(--nv-elements-color-dark-link);
   --nv-elements-color-block: var(--nv-elements-color-dark-block);
+  --nv-background-gradient: linear-gradient(
+    0deg,
+    var(--nv-color-base-blue-600) 0%,
+    var(--nv-color-base-blue-600) 9%,
+    var(--nv-background-color) 37%,
+    var(--nv-background-color) 100%
+  );
 }
 
 html,
@@ -39,6 +53,9 @@ main {
   background: var(--nv-background-color);
   font-family: var(--nv-font-family-mic-rounded);
   min-height: 100vh;
+}
+main {
+  background: var(--nv-background-gradient);
 }
 
 h1 {
