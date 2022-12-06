@@ -1,0 +1,11 @@
+.bearform {
+  &-container {
+  }
+  &-header {
+    text-align: center;
+  }
+  &-form {
+    display: grid;
+    place-items: center;
+  }
+}

@@ -4,7 +4,7 @@ import { FaChevronDown, FaChevronUp, FaCheck } from "react-icons/fa";
 import * as Select from "@radix-ui/react-select";
 
 interface SelectProps {
-  defaultValue: string;
+  defaultValue?: string;
   error?: boolean;
   placeholderText?: string;
   label: string;

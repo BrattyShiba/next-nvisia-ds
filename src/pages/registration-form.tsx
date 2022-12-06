@@ -1,4 +1,5 @@
 import Head from "next/head";
+import BearForm from "../components/BearForm";
 import { Header } from "../components/Header";
 
 export default function RegistrationForm() {
@@ -11,7 +12,7 @@ export default function RegistrationForm() {
       </Head>
       <main>
         <Header />
-        <h2>Registration Form Page</h2>
+        <BearForm />
       </main>
     </div>
   );
