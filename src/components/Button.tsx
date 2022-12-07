@@ -8,7 +8,7 @@ interface ButtonProps {
   label: string;
   mode?: "primary" | "secondary";
   name?: string;
-  onClickEvent?(): () => {};
+  onClickEvent?: () => void;
 }
 
 export const Button = ({

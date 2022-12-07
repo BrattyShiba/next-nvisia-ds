@@ -5,6 +5,8 @@ interface CheckboxProps {
   label: string;
   id: string;
   error?: boolean;
+  value: string;
+  onCheckedChange: () => void;
 }
 
 const CheckBox = ({ ...props }: CheckboxProps) => {
@@ -12,7 +14,12 @@ const CheckBox = ({ ...props }: CheckboxProps) => {
     <span
       className={`checkbox-container ${props.error ? "checkbox-error" : ""}`}
     >
-      <Checkbox.Root className="checkbox" id={props.id}>
+      <Checkbox.Root
+        className="checkbox"
+        id={props.id}
+        value={props.value}
+        onCheckedChange={props.onCheckedChange}
+      >
         <Checkbox.Indicator className="checkbox-indicator">
           <FaCheck />
         </Checkbox.Indicator>
