@@ -5,6 +5,7 @@ import { FaHome, FaUserCircle } from "react-icons/fa";
 import { useTheme } from "../pages/context/ThemeContext";
 import { Button } from "./Button";
 import Toggle from "./Toggle";
+import debounce from "lodash.debounce";
 
 type User = {
   name: string;
@@ -20,9 +21,9 @@ interface HeaderProps {
 export const Header = ({ user }: HeaderProps) => {
   const { isDarkTheme, toggleTheme } = useTheme();
 
-  const toggleDarkTheme = () => {
+  const toggleDarkTheme = debounce(() => {
     toggleTheme();
-  };
+  }, 100);
 
   useEffect(() => {
     if (isDarkTheme && document) {

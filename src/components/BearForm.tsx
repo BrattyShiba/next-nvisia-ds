@@ -42,13 +42,26 @@ const BearForm = () => {
     }
   };
   const validForm = () => {
-    return form.name.length !== 0 && !validBear;
+    return form.name.length > 0 && validBear;
   };
   const handleSubmit = () => {
-    //TODO Post to George's API
+    const bodyRequest = JSON.stringify({
+      messageType: "designsystem",
+      message: `New submission from the Chonk form at the Design System`,
+      json: form,
+    });
+    fetch("/api", {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `${process.env.APIKEY}`,
+      },
+      body: bodyRequest,
+    });
   };
 
-  const validBear = form.species !== "" && form.species !== "bear";
+  const validBear = form.species !== "" && form.species === "bear";
 
   return (
     <div className="bearform-container">
@@ -82,14 +95,14 @@ const BearForm = () => {
             label="Please Select an option"
             name="species"
             onValueChange={handleDropdown}
-            error={validBear}
+            error={!validBear}
           >
             <DropdownItem value="bear">Bear</DropdownItem>
             <DropdownItem value="dog">Dog</DropdownItem>
             <DropdownItem value="cat">Cat</DropdownItem>
             <DropdownItem value="bird">Bird</DropdownItem>
           </Dropdown>
-          {validBear && <p>You must choose bear to vote</p>}
+          {!validBear && <p>You must choose bear to vote</p>}
 
           <h3>Pick a Bear</h3>
 
@@ -97,7 +110,7 @@ const BearForm = () => {
             label="Please Select an option"
             name="bear"
             onValueChange={handleDropdown}
-            disabled={validBear}
+            disabled={!validBear}
           >
             <DropdownItem value="polar">Polar</DropdownItem>
             <DropdownItem value="grizzly">Grizzly</DropdownItem>

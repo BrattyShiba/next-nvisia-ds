@@ -5,6 +5,10 @@ const nextConfig = {
   images: {
     domains: ["unsplash.it"],
   },
+  env: {
+    API: process.env.API,
+    APIKEY: process.env.APIKEY,
+  },
 };
 
 module.exports = nextConfig;
