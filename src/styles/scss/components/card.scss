@@ -24,7 +24,11 @@
   padding-top: calc(50%);
   @media #{$mq-mediumScreen} {
     padding-top: 0;
-    max-width: min(25vw, 335px);
+    max-width: min(25vw, 220px);
+  }
+  @media #{$mq-largeScreen} {
+    padding-top: 0;
+    max-width: min(25vw, 300px);
   }
   img {
     aspect-ratio: 1/1;

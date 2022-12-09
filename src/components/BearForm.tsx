@@ -47,10 +47,10 @@ const BearForm = () => {
   const handleSubmit = () => {
     const bodyRequest = JSON.stringify({
       messageType: "designsystem",
-      message: `New submission from the Chonk form at the Design System`,
-      json: form,
+      message: `A vote recorded for ${form.bear} at the Design System`,
+      json: JSON.stringify(form),
     });
-    fetch("/api", {
+    fetch(`/api`, {
       method: "POST",
       mode: "cors",
       headers: {

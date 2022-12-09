@@ -27,7 +27,7 @@ const ThemeProvider: React.FC<PropsWithChildren> = ({ children }) => {
       message: `Lights ${themeStatus} over at the Design System`,
       json: "{}",
     });
-    fetch("/api", {
+    fetch(`${process.env.API}`, {
       method: "POST",
       mode: "cors",
       headers: {

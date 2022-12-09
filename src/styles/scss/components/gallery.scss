@@ -15,9 +15,13 @@
     gap: 110px;
     padding-top: 110px;
     @media #{$mq-mediumScreen} {
+      justify-content: space-evenly;
       flex-direction: row;
       flex-wrap: wrap;
       gap: 40px;
+    }
+    @media #{$mq-largeScreen} {
+      justify-content: space-between;
       padding-top: 0px;
     }
   }
