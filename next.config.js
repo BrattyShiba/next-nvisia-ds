@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const path = require("path");
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
@@ -8,6 +9,9 @@ const nextConfig = {
   env: {
     API: process.env.API,
     APIKEY: process.env.APIKEY,
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
   },
 };
 

@@ -4,17 +4,14 @@ import * as Accordion from "@radix-ui/react-accordion";
 
 import { toKebabCase } from "../utilities";
 
-interface AccordionProps {
-  mode?: "multiple" | "single";
-}
+interface AccordionProps {}
 
 export const AccordionElement = ({
   children = [],
-  mode = "multiple",
   ...props
 }: PropsWithChildren<AccordionProps>) => {
   return (
-    <Accordion.Root className="accordion-root" type={mode}>
+    <Accordion.Root className="accordion-root" type="multiple">
       {(children as any[]).map((child) => {
         return (
           <Accordion.Item

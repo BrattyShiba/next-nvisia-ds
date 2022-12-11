@@ -1,4 +1,3 @@
-/* eslint-disable react/display-name */
 import { forwardRef, PropsWithChildren } from "react";
 import { FaChevronDown, FaChevronUp, FaCheck } from "react-icons/fa";
 import * as Select from "@radix-ui/react-select";
@@ -6,7 +5,6 @@ import * as Select from "@radix-ui/react-select";
 interface SelectProps {
   defaultValue?: string;
   error?: boolean;
-  placeholderText?: string;
   label: string;
   disabled?: boolean;
   name: string;

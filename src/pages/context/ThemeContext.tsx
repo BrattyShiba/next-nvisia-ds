@@ -27,15 +27,15 @@ const ThemeProvider: React.FC<PropsWithChildren> = ({ children }) => {
       message: `Lights ${themeStatus} over at the Design System`,
       json: "{}",
     });
-    fetch(`${process.env.API}`, {
-      method: "POST",
-      mode: "cors",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `${process.env.APIKEY}`,
-      },
-      body: bodyRequest,
-    });
+    // fetch(`${process.env.API}`, {
+    //   method: "POST",
+    //   mode: "cors",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     Authorization: `${process.env.APIKEY}`,
+    //   },
+    //   body: bodyRequest,
+    // });
   };
 
   return (

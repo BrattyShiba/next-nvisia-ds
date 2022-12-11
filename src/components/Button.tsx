@@ -37,7 +37,7 @@ export const Button = ({
         onClick={handleClick}
         {...props}
       >
-        {toTitleCase(label)}
+        {label}
       </button>
     </div>
   );
