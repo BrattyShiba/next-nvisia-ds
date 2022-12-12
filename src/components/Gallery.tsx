@@ -7,10 +7,10 @@ const Gallery = () => {
       <div className="gallery-header">
         <h2>GALLERIA OF CHONK</h2>
         <div className="gallery-header-row">
-          <h3>Browse your favorite bears and vote in our Bracket!</h3>
+          <h3>Browse your favorite bear-thumbs and vote in our Bracket!</h3>
           <Modal
-            buttonLabel="Bear Selection Guidelines"
-            name="bearGuidelines"
+            buttonLabel="bear-thumb Selection Guidelines"
+            name="bear-thumbGuidelines"
             mode="secondary"
           >
             <ModalContent
@@ -18,7 +18,7 @@ const Gallery = () => {
               name="closeModal"
               mode="primary"
             >
-              <h2>Guidelines for Selecting A Bear</h2>
+              <h2>Guidelines for Selecting A bear-thumb</h2>
               <h3>Excepteur sint occaecat cupidatat</h3>
               <p>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -60,18 +60,18 @@ const Gallery = () => {
         </div>
       </div>
       <div className="gallery-cards">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card image="/bear-thumb.jpg" />
+        <Card image="/bear-thumb.jpg" />
+        <Card image="/bear-thumb.jpg" />
+        <Card image="/bear-thumb.jpg" />
+        <Card image="/bear-thumb.jpg" />
+        <Card image="/bear-thumb.jpg" />
+        <Card image="/bear-thumb.jpg" />
+        <Card image="/bear-thumb.jpg" />
+        <Card image="/bear-thumb.jpg" />
+        <Card image="/bear-thumb.jpg" />
+        <Card image="/bear-thumb.jpg" />
+        <Card image="/bear-thumb.jpg" />
       </div>
       <div className="gallery-background"></div>
     </div>

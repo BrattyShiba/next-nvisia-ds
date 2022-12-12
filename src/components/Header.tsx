@@ -1,24 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 import { FaHome, FaUserCircle } from "react-icons/fa";
 import { useTheme } from "../pages/context/ThemeContext";
-import { Button } from "./Button";
 import Toggle from "./Toggle";
 import debounce from "lodash.debounce";
 
-type User = {
-  name: string;
-};
-
-interface HeaderProps {
-  user?: User;
-  onLogin?: () => void;
-  onLogout?: () => void;
-  onCreateAccount?: () => void;
-}
-
-export const Header = ({ user }: HeaderProps) => {
+export const Header = () => {
   const { isDarkTheme, toggleTheme } = useTheme();
 
   const toggleDarkTheme = debounce(() => {
