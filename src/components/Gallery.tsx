@@ -7,10 +7,10 @@ const Gallery = () => {
       <div className="gallery-header">
         <h2>GALLERIA OF CHONK</h2>
         <div className="gallery-header-row">
-          <h3>Browse your favorite bear-thumbs and vote in our Bracket!</h3>
+          <h3>Browse your favorite bear and vote in our Bracket!</h3>
           <Modal
-            buttonLabel="bear-thumb Selection Guidelines"
-            name="bear-thumbGuidelines"
+            buttonLabel="Selection Guidelines"
+            name="Guidelines"
             mode="secondary"
           >
             <ModalContent
@@ -18,7 +18,7 @@ const Gallery = () => {
               name="closeModal"
               mode="primary"
             >
-              <h2>Guidelines for Selecting A bear-thumb</h2>
+              <h2>Guidelines for Selecting A Bear</h2>
               <h3>Excepteur sint occaecat cupidatat</h3>
               <p>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
