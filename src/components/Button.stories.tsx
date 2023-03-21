@@ -6,7 +6,7 @@ export default {
   component: Button,
 } as Meta;
 
-const Template: StoryFn = (args) => <Button {...args} />;
+const Template: StoryFn = (args) => <Button label={""} {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
