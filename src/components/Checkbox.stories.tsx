@@ -6,7 +6,15 @@ export default {
   component: CheckBox,
 } as Meta;
 
-const Template: StoryFn = (args) => <CheckBox {...args} />;
+const Template: StoryFn = (args) => (
+  <CheckBox
+    label={""}
+    id={""}
+    value={""}
+    onCheckedChange={function (): void {}}
+    {...args}
+  />
+);
 
 export const Default = Template.bind({});
 Default.args = {

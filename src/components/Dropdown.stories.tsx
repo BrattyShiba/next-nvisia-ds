@@ -8,7 +8,12 @@ export default {
 } as Meta;
 
 const Template: StoryFn = (args) => (
-  <Dropdown {...args}>
+  <Dropdown
+    label={""}
+    name={""}
+    onValueChange={function (d: string, e: string): void {}}
+    {...args}
+  >
     <DropdownItem value="one">One</DropdownItem>
     <DropdownItem value="two">Two</DropdownItem>
     <DropdownItem value="three">Three</DropdownItem>

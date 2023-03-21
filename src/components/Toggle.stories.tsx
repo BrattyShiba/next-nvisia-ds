@@ -6,7 +6,9 @@ export default {
   component: Toggle,
 } as Meta;
 
-const Template: StoryFn = (args) => <Toggle {...args}></Toggle>;
+const Template: StoryFn = (args) => (
+  <Toggle label={""} id={""} {...args}></Toggle>
+);
 
 export const Default = Template.bind({});
 Default.args = {

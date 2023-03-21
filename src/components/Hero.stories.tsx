@@ -6,7 +6,9 @@ export default {
   component: Hero,
 } as Meta;
 
-const Template: StoryFn = (args) => <Hero {...args}></Hero>;
+const Template: StoryFn = (args) => (
+  <Hero title={""} description={""} image={""} imageAlt={""} {...args}></Hero>
+);
 
 export const Default = Template.bind({});
 Default.args = {

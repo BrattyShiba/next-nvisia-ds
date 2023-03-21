@@ -6,7 +6,9 @@ export default {
   component: InputField,
 } as Meta;
 
-const Template: StoryFn = (args) => <InputField {...args} />;
+const Template: StoryFn = (args) => (
+  <InputField label={""} name={""} {...args} />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {

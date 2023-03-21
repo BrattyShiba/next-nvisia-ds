@@ -9,8 +9,8 @@ export default {
 } as Meta;
 
 const Template: StoryFn = (args) => (
-  <Modal {...args}>
-    <ModalContent {...args}>
+  <Modal buttonLabel={""} name={""} mode={"primary"} {...args}>
+    <ModalContent closeModal={""} name={""} mode={"primary"} {...args}>
       <h2>Modal Window</h2>
       <h3>Excepteur sint occaecat cupidatat</h3>
       <p>
